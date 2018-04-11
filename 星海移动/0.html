@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3实现按钮闪烁</title>
+    <style type="text/css">
+        .btn-twinkle{
+            color: #fff;
+            border:none;
+            animation: twinkle 1s alternate infinite;
+        }
+        @keyframes twinkle{
+            from{background: #16e2eb;}
+            to{background: #3b6e99;}
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-twinkle">我是个会闪烁的按钮</button>
+</body>
+</html>

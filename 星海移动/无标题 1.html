@@ -1,0 +1,29 @@
+<script type="text/javascript">
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+var browser = navigator.userAgent.toLowerCase(); 
+var isMobile = false; 
+for (var i=0; i<mobileAgent.length; i++){ if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true; 
+//alert(mobileAgent[i]); 
+location.href = '手机网址';
+break; } } 
+</script>
+
+
+
+<iframe style="width: 100%; height: 2.1rem;" src='http://player.youku.com/embed/XMzM3NDYxNDgxMg==' frameborder=0 'allowfullscreen'></iframe>
+				<object id="sample_video" class="vjs-flash-fallback" width="350"height="200" type="application/x-shockwave-flash"
+					data="http://player.youku.com/player.php/sid/XMzM3NDYxNDgxMg==/v.swf"> <!-- 视频地址 -->
+					<param name="movie" value="http://player.youku.com/player.php/sid/XNzE4MDgxOTIw/v.swf" /> <!-- 视频地址 -->
+					<param name="allowfullscreen" value="true" /> 
+				</object>
+				
+<video width="800" height="800">
+					<source src="myvideo.mp4" type="http://player.youku.com/embed/XMzM3NDYxNDgxMg=="></source>
+					<source src="myvideo.ogv" type="http://player.youku.com/player.php/sid/XMzM3NDYxNDgxMg==/v.swf"></source>
+					<source src="myvideo.webm" type="http://player.youku.com/player.php/sid/XMzM3NDYxNDgxMg==/v.swf"></source>
+					<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+						<param name="movie" value="http://player.youku.com/embed/XMzM3NDYxNDgxMg==" />
+						<param name="flashvars" value="http://player.youku.com/player.php/sid/XMzM3NDYxNDgxMg" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
