@@ -134,9 +134,13 @@ ul{
 /*about*/
 .about{
 	border-top:2px solid #e3e3e3;
-	border-bottom: 2px solid #e3e3e3;
+/*	border-bottom: 2px solid #e3e3e3;*/
 	text-align: center;
 	margin-top:0.2rem;
+}
+.about_bot{
+	height: 0.2rem;
+	border-bottom: 2px solid #e3e3e3;
 }
 .about h3{
 	font-size: 0.4rem;
@@ -156,10 +160,44 @@ ul{
 	font-size: 0.1rem;
 	border: none;
 }
-.about p{
+.about_box p{
 	font-size: 0.1rem;
 	padding: 0 0.35rem ;
 	text-align: left;
+	line-height: 0.32rem;
+}
+.about_box{
+	position: relative;
+	height: 2.24rem;
+	overflow: hidden;
+}
+.about .about_box_1{
+	position: absolute;
+	right :0.35rem;
+	bottom:0;
+	background: white;
+	height: 0.3rem;
+	font-size: 0.2rem;
+	line-height: 0.32rem;
+	color: red;
+	width: 2rem;
+}
+.about .about_box_2{
+	display: none;
+	position: absolute;
+	right :0.35rem;
+	bottom:0;
+	background: white;
+	height: 0.3rem;
+	font-size: 0.2rem;
+	line-height: 0.32rem;
+	color: red;
+	width: 0.5rem;
+}
+.about .about_box_1 i{
+	display: inline-block;
+	color: red;
+	font-style: normal;
 }
 /*teacher*/
 .teacher{
