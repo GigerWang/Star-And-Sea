@@ -1,15 +1,37 @@
-.swiper_wrap{
-	position: relative;
-	width: 7.5rem;
+.cons{
+	width: 1.95rem;
 	height: 1rem;
-	margin: 0 auto;
+	background: #333333;
+	float: left;
+}
+.cons img{
+	width: 0.57rem;
+	height: 0.57rem;
+	float: left;
+	margin-top:0.215rem;
+	margin-left: 0.2rem;
+	
+}
+.cons span{
+	display: block;
+	float: left;
+	color: white;
+	font-size: 0.1rem;
+	line-height: 1rem;
+	margin-left: 0.05rem;
+}
+.swiper_wrap{
+	width: 5.55rem;
+	height: 1rem;
 	overflow: hidden;
+	background: #cc1e30;
+	float: left;
 }
 .swiper_wrap ul{
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 7.5rem;
+	width: 5.55rem;
 	float: right;
   	color: #444;
  	font-size: 14px;
@@ -18,10 +40,26 @@
 	line-height: 1rem;
 	height: 1rem;
 }
-.swiper_wrap ul li a div{
+.container .swiper_wrap ul li a{
 	float: left;
+	display: inline-block;
+	width: 4.8rem;
+	margin-left: 0.2rem;
+	text-decoration: none;
+	font-size: 0.1rem;
+	color: #FFFFFF;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	
 }
-.top_left{
+.swiper_wrap ul li span{
+	display: inline-block;
+	float: left;
+	color: #FFFFFF;
+}
+
+/*.top_left{
 	width: 2rem;
 	height: 1rem;
 	background: #282828;
@@ -53,7 +91,7 @@
 	display: block;
 	font-size: 0.2rem;
 	margin-left: 0.1rem;
-}
+}*/
  .swiper_wrap .font_inner a{
 	color: #444;
 }

@@ -1,22 +1,79 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
-<title>js</title>
-<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-$(window).scroll(function () {
-var a = document.getElementById("eq").offsetTop;
-if (a >= $(window).scrollTop() && a < ($(window).scrollTop()+$(window).height())) {
-alert("div在可视范围");
+
+<meta charset="UTF-8">
+
+<title>文章高度展开</title>
+
+<style>
+
+#myarticle{
+
+width:700px;
+
+height:300px;
+
+overflow-y:hidden;
+
+border:1px solid green;
+
+margin:20px auto;
+
 }
-});
-});
-</script>
+
+p{
+
+text-indent: 2em;
+
+margin-bottom: 10px;
+
+}
+
+button{
+
+width:700px;
+
+margin:10px auto;
+
+text-align: center;
+
+display: none;
+
+}
+
+</style>
+
 </head>
+
 <body>
-<div style="width:1px;height:2000px;"></div>
-<div id="eq" style=" width:100px; height:100px; background-color:Red;">1</div>
-<div style="width:1px;height:2000px;"></div>
+
+<div id="myarticle">
+<p>你们好！首先，你们看到的这个标题够“屌”的吧？！这是我13岁女儿对我的昵称。您别以为这小家伙“没大没小的没家教”或是什么“问题少年”，恰恰相反，我的女儿挺优秀，小学毕业前得过“北京市红领巾奖章”，作文集被人民邮电出版社出版过（她不让到处说）……老汉自认为在教育孩子上有点经验，所以在“携手在线”和大家分享，既是为“携手在线”呐喊助威，也是“幼吾幼以及人之幼”吧，期望您多少有点收获。</p>
+<p>其次，您别指望从我这儿能学到什么。世界上找不到两片完全一样的树叶，更何况人了？！我怎么教育孩子，只适用于我女儿，与您的娃没有半毛钱关系，尤其是血缘上（够屌吧）！可话又说回来了，“隔行如隔山，但隔行不隔理”，毕竟孩子是大人的“简装版”，都会饿吃、困睡，见好处就上、见麻烦就躲……所谓进步，就是不断消除无知、克服缺点、纠正错误的过程，就是不断改掉坏毛病、养成好习惯、修炼优良作风与涵养的过程，就是不断追寻、发现、遵从和捍卫真理的过程。这些道理是相通的，因此，您看了我的话，也许能有所启发，这工夫就没白花。</p>
+<p>最后，在单位上班，几乎所有人都被提醒过：“领导交办的事情不好好做，还想不想在这儿混了？！”同理，男欢女爱造人容易，给什么孩子可就是上天的事了。孩子是上天赐予的礼物和任务，我们应常怀敬畏之心、竭尽浑身吃奶之力，要“在孩子的引领下，跑在孩子前面（这句话更屌，您转过弯儿了吗）”，让孩子教会我们，我们再影响孩子。“上天交办的事情不好好做，还想不想活了？！”</p>
+<p>说到单位，屌叔也是有单位的人，作为志愿者和“携手在线”的粉丝（简称手撕，然后牛肉、鸡肉的有木有？肚子咕咕叫、口水往下流的有木有）在这里干点善事，一定为“携手在线”和网友们尽心竭力。不过，既然东家给俺发工资，咱也得给东家好好干活不是？！即使不能贴金，起码不能让东家丢脸吧！因此，屌叔有空就会与大家聊聊，没空您也别……就是没空呗。如果有什么问题，您尽管留言，屌叔一定答复，就是时间没准，屌呗！</p>
+<p>BTW，取名屌叔，还因为必须说点屌事，以后大家慢慢懂呵……</p>
+<p>非常感谢女儿和她同年同月同日生的小伙伴，是两个孩子的四只小手，牵起了两个家长的四只大手（八爪鱼有木有），携手在线为您忽悠，还要感谢携手在线的姑娘、小伙们，你们应该的呵！</p>
+</div>
+<button id="btn">查看更多……</button>
+
+<script>
+var btn = document.getElementById('btn');
+var obj = document.getElementById('myarticle');
+var total_height =  obj.scrollHeight;//文章总高度
+var show_height = 300;//定义原始显示高度
+if(total_height>show_height){
+btn.style.display = 'block';
+btn.onclick = function(){
+obj.style.height = total_height + 'px';
+btn.style.display = 'none';
+}
+}
+</script>
+
 </body>
+
 </html>
