@@ -1,0 +1,7 @@
+<view class='container'>
+  <image class='avatar' src='/images/avatar/touxiang.jpg'></image>
+  <text class='motto'>Hello,外国小孩儿</text>
+<view class='journey-container'>
+  <text class='journey' catchtap='onTapJump'>开启小程序之旅</text>
+</view>
+</view>

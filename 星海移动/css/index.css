@@ -32,7 +32,9 @@ ul{
 	font-size: 0.4rem;
 	line-height: 0.4rem;
 }*/
-
+.container{
+	max-width: 750px;
+}
 /*banner*/
 .banner{
 	width: 100%;
@@ -64,7 +66,7 @@ ul{
 	margin-bottom: 0.05rem;
 }
 .nav span{
-	font-size: 0.1rem;
+	font-size: 0.2rem;
 	display: block;
 }
 /*announcement*/
@@ -111,7 +113,7 @@ ul{
 	float: left;
 }
 .announcement p{
-	font-size: 0.1rem;
+	font-size: 0.2rem;
 	color: #FFFFFF;
 	display: block;
 	width:1.8rem;
@@ -161,7 +163,7 @@ ul{
 	border: none;
 }
 .about_box p{
-	font-size: 0.1rem;
+	font-size: 0.2rem;
 	padding: 0 0.35rem ;
 	text-align: left;
 	line-height: 0.32rem;
@@ -312,15 +314,14 @@ ul{
 	font-size: 0.3rem;
 }
 .inform p{
-	font-size: 0.1rem;
+	font-size: 0.18rem;
 	margin: 0.1rem 0;
 	letter-spacing: 1.5px;
 }
 .inform p:last-child{
 	color: red;
 }
-.apply div,.apply input{
-	width: 3rem;
+.apply div,.apply input,.apply1 div,.apply1 input,.apply2 div,.apply2 input{
 	height: 1rem;
 	line-height: 1rem;
 	display: block;
@@ -330,14 +331,129 @@ ul{
 	padding: 0;
 }
 .apply div{
-	border-top:1px solid red;
-	border-left:1px solid red;
-	border-bottom:1px solid red;
+	border-top:1px solid black;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
 	border-radius: 4px 0 0 4px;
+	margin-left: 0.2rem;
+	width: 1.3rem;
+	padding-left: 0.2rem;
 }
 .apply input{
-	border-top:1px solid red;
-	border-bottom:1px solid red;
-	border-right:1px solid red;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
 	border-radius: 0 4px 4px 0;
+	width: 5.6rem;
+}
+.apply1 div{
+	border-top:1px solid black;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	border-radius: 4px 0 0 4px;
+	margin-left: 0.2rem;
+	width: 2.3rem;
+	padding-left: 0.2rem;
+}
+.apply1 input{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	border-radius: 0 4px 4px 0;
+	width: 4.6rem;
+}
+.apply2{
+	display: inline;
+}
+.apply2 div{
+	border-top:1px solid black;
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	border-radius: 4px 0 0 4px;
+	margin-left: 0.2rem;
+	width: 1rem;
+	padding-left: 0.2rem;
+}
+.apply2 input{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	border-radius: 0 4px 4px 0;
+	width: 2.22rem;
+}
+.apply2 .divsel{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;
+	border-left: none;
+	border-radius: 0 4px 4px 0;
+	width: 2.22rem;
+	margin-left: 0;
+	padding-left:0;
+}
+.apply2 select{
+	height: 1rem;
+	line-height: 1rem;
+	display: block;
+	float: left;
+	border:none;
+	margin: 0;
+	padding: 0;
+	border-radius: 0 4px 4px 0;
+	width: 2.22rem;
+}
+.apply,.apply1,.apply2{
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+}
+.apply2{
+	display: block;
+	float: left;
+	margin-bottom: 0.2rem;
+}
+.apply3{
+	width: 7.1rem;
+	margin-left: 0.2rem;
+	
+}
+.apply3 input{
+	width: 100%;
+	background: #cc1e30;
+	color: white;
+	font-size: 0.34rem;
+	font-weight: bold;
+	border-radius: 5px;
+	height: 0.9rem;	
+	border: none;
+}
+.link{
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.link span{
+	padding-left: 0.4rem;
+	font-size: 0.26rem;
+	font-family: "微软雅黑";
+	
+}
+.link a{
+	margin-left: 0.6rem;
+	font-size: 0.2rem;
+	text-decoration: none;
+	color:black;
+}
+/*底部*/
+.footer{
+	width:100%
+}
+.footer div{
+	width: 25%;
+	height:1.2rem;
+	float: left;
+}
+.footer div img{
+	width: 100%;
+}
+.footer div a{
+	float: left;
 }

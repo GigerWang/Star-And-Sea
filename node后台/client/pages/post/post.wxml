@@ -1,0 +1,100 @@
+<!-- 轮播开始 -->
+<view>
+  <swiper indicator-dots='true' autoplay='true' interval='3000' ciecular="true">
+    <swiper-item>
+      <image src='/images/post/haibian_yanshi-005.jpg' mode='wodthFix'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/haibian_yanshi-006.jpg' mode='wodthFix'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/haibian_yanshi-007.jpg' mode='wodthFix'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/haibian_yanshi-008.jpg' mode='wodthFix'></image>
+    </swiper-item>  
+  </swiper>
+</view>
+<!-- 轮播结束 -->
+<!-- 列表页开始 -->
+<view class='post-container'>
+  <view class='post-author-date'>
+    <image src='/images/avatar/touxiang.jpg'></image>
+    <text>Jan 28 2018</text>
+  </view>
+  <text class='post-title'>小时候的冰棍儿与雪糕</text>
+  <image class='post-image' src='/images/post/bjl.jpg' mode='wodthFix'></image>
+  <text class='post-content'>
+    冰棍儿与雪糕绝对不是一个东西。3到5毛钱的雪糕犹如现在的哈根达斯，而5分1毛的冰棍儿就像现在的老冰棒。时过境迁，...
+  </text>
+  <view class='post-like'>
+    <image src='/images/post/browse.png'></image>
+    <text>108</text>
+    <image src='/images/post/survey.png'></image>
+    <text>92</text>
+    <image src='/images/post/like.png'></image>
+    <text>7</text>
+  </view>
+</view>
+<!-- 列表页结束 -->
+<!-- 列表页开始 -->
+<view class='post-container'>
+  <view class='post-author-date'>
+    <image src='/images/avatar/touxiang2.jpg'></image>
+    <text>Jan 29 2018</text>
+  </view>
+  <text class='post-title'>你从未了解过的宇宙</text>
+  <image class='post-image' src='/images/post/yuzhou.jpg' mode='wodthFix'></image>
+  <text class='post-content'>
+    宇宙是广袤空间和其中存在的各种天体以及弥漫物质的总称。宇宙起源是一个极其复杂的问题。 宇宙是物质世界，它处于不断的运动和发展中。千百年来，科学家们一直在探寻宇宙是什么时候、如何形成的。直到今天，许多科学家认为，宇宙是由大约137亿年前发生的一次大爆炸形成的...
+  </text>
+  <view class='post-like'>
+    <image src='/images/post/browse.png'></image>
+    <text>108</text>
+    <image src='/images/post/survey.png'></image>
+    <text>92</text>
+    <image src='/images/post/like.png'></image>
+    <text>7</text>
+  </view>
+</view>
+<!-- 列表页结束 -->
+<!-- 列表页开始 -->
+<view class='post-container'>
+  <view class='post-author-date'>
+    <image src='/images/avatar/touxiang3.jpg'></image>
+    <text>Jan 30 2018</text>
+  </view>
+  <text class='post-title'>大家都喜欢的跑车</text>
+  <image class='post-image' src='/images/post/paoche.jpg' mode='wodthFix'></image>
+  <text class='post-content'>
+    跑车的英文名是SportsCar或SportyCar，属于一种低底盘、线条流畅、动力突出的汽车类型，其最大特点是不断追求速度极限。跑车的分类有很多种，按车身结构可分为轿跑、敞篷跑车、双门跑车，按价值可分为平民跑车、超级跑车...
+  </text>
+  <view class='post-like'>
+    <image src='/images/post/browse.png'></image>
+    <text>108</text>
+    <image src='/images/post/survey.png'></image>
+    <text>92</text>
+    <image src='/images/post/like.png'></image>
+    <text>7</text>
+  </view>
+</view>
+<!-- 列表页结束 -->
+<block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx"  wx:key="title">
+  <view class='post-container'>
+  <view class='post-author-date'>
+    <image src='{{item.avatar}}'></image>
+    <text>{{item.object.date}}</text>
+  </view>
+  <text class='post-title'>{{item.title}}</text>
+  <image class='post-image' src='{{item.postImg}}' mode='wodthFix'></image>
+  <text class='post-content'>{{item.content}}</text>
+  <view class='post-like'>
+    <image src='/images/post/browse.png'></image>
+    <text>{{item.collentionNum.array[0]}}</text>
+    <image src='/images/post/survey.png'></image>
+    <text>{{item.readingNum}}</text>
+    <image src='/images/post/like.png'></image>
+    <text>{{item.commentNum}}</text>
+  </view>
+</view>
+</block>
