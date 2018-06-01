@@ -1,0 +1,68 @@
+<view class='containerHead'>
+  <text>年龄</text>
+  <text>性别</text>
+  <text>身高</text>
+  <text>地区</text>
+  <text>意向</text>
+</view>
+<view class='containerPic'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+    <view class="picker">
+      {{array1[index1]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+    <view class="picker">
+      {{array2[index2]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+    <view class="picker">
+      {{array3[index3]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange4" value="{{index4}}" range="{{array4}}">
+    <view class="picker">
+      {{array4[index4]}}
+    </view>
+  </picker>
+</view>
+
+<block wx:for="{{listData}}" wx:for-item="item" wx:for-index="idx"  wx:key="zIndex">
+  <view class='rulesList' catchtap='onJump' data-post-id="{{item.zIndex}}">
+    <view class='rl_left'>
+      <image src='{{item.imgsrc}}' class='rl_l_img'></image>
+    </view>
+    <view class='rl_right'>
+    <view style='width:580rpx'>
+      <text class='rl_r_tex'>名称：</text>
+      <text class='rl_r_tx1'>{{item.studentName}}</text>
+    </view>
+    <view style='width:580rpx'>
+      <text class='rl_r_tex'>年龄：</text>
+      <text class='rl_r_tx2'>{{item.age}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>性别：</text>
+      <text class='rl_r_tx3'>{{item.sex}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>身高：</text>
+      <text class='rl_r_tx5'>{{item.height}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>地区：</text>
+      <text class='rl_r_tx4'>{{item.region}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>意向：</text>
+      <text class='rl_r_tx5'>{{item.intention}}</text>
+    </view>
+    </view>
+  </view>
+</block>

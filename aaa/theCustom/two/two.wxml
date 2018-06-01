@@ -1,0 +1,32 @@
+
+<view class='rulesList'>
+    <view class='rl_left'>
+      <image src='{{listData[postId].imgsrc}}' class='rl_l_img'></image>
+    </view>
+    <view class='rl_right'>
+    <view style='width:580rpx'>
+      <text class='rl_r_tex'>名称：</text>
+      <text class='rl_r_tx1'>{{listData[postId].studentName}}</text>
+    </view>
+    <view style='width:580rpx'>
+      <text class='rl_r_tex'>年龄：</text>
+      <text class='rl_r_tx2'>{{listData[postId].age}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>性别：</text>
+      <text class='rl_r_tx3'>{{listData[postId].sex}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>身高：</text>
+      <text class='rl_r_tx5'>{{listData[postId].height}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>地区：</text>
+      <text class='rl_r_tx4'>{{listData[postId].region}}</text>
+    </view>
+    <view style='width:290rpx'>
+      <text class='rl_r_tex'>意向：</text>
+      <text class='rl_r_tx5'>{{listData[postId].intention}}</text>
+    </view>
+    </view>
+  </view>

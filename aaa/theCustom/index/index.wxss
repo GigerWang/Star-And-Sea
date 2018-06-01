@@ -1,0 +1,56 @@
+.containerPic{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+picker{
+  flex: 1;
+}
+.picker{
+  text-align: center;
+  margin-top:0;
+  border-top: none;
+  height: 90rpx;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.containerHead{
+  display: flex;
+}
+.containerHead text{
+  flex: 1;
+  text-align: center;
+  color: red;
+  padding: 10rpx 0;
+  border:solid 1px #eee;
+  border-bottom: none;
+}
+.rulesList{
+  border-top:1px solid aquamarine;
+  border-bottom:1px solid aquamarine;
+  margin-top: 10rpx;
+  display: flex;
+}
+.rl_left{
+  flex: 2;
+}
+.rl_left image{
+  width: 150rpx;
+  height: 170rpx;
+}
+.rl_right{
+  flex: 8;
+  height: 170rpx;
+  padding-left: 20rpx;
+}
+.rl_right view{
+  float: left;
+  line-height: 42.5rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+.rl_r_tex{
+  color: #3fc1e3;
+}
